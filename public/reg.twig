@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Nescambank</title>
+</head>
+<body class="container mt-5 bg-light align-items-center">
+
+    <div class="container mt-5">
+        <form id="user-form">
+            <div class="mb-3">
+                <label for="surname">Прізвище</label>
+                <input type="text" class="form-control" id="surname" placeholder="введіть своє прізвище" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="name">Ім'я</label>
+                <input type="text" class="form-control" id="name" placeholder="введіть своє ім'я" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="fathername">По-батькові</label>
+                <input type="text" class="form-control" id="fathername" placeholder="введіть своє по-батькові" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Електронна пошта</label>
+                <input type="email" class="form-control" id="email" placeholder="введіть свою пошту" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="card-number">Номер банківської карти</label>
+                <input type="number" class="form-control" id="cardNumber" placeholder="введіть номер карти" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="pin">Пін</label>
+                <input type="password" class="form-control" id="pin" maxlength="4" placeholder="введіть пін код" required>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Пуп</button>
+        </form>
+    </div>
+
+    <script src="/scriptReg.js"></script>
+</body>
+</html>
