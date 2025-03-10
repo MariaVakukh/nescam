@@ -100,7 +100,7 @@ server.use("/admin", async (req, res) => {
 
 server.get("/", (req, res) => {
     try{
-        res.render(__dirname + "/public/reg.twig");
+        res.render(__dirname + "/public/reg.html");
     }catch{
         console.error("Error rendering page:", error);
         res.status(500).send("Internal Server Error");

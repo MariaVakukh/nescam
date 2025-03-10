@@ -10,7 +10,7 @@ document.getElementById("user-form").addEventListener("submit", async (event) =>
     
 
     if (!notEmptyString(email) || !notEmptyString(name) || !notEmptyString(fathername) || !notEmptyString(surname) || !notEmptyString(password))  {
-        alert("All fields are required!");
+        alert("Всі поля обов'язкові!");
         return;
     }
 
@@ -24,6 +24,8 @@ document.getElementById("user-form").addEventListener("submit", async (event) =>
         cardNumber,
         password
         };
+
+        alert("Підтвердіть реєстрацію через пошту!")
 
         //send to bd
         try {
@@ -45,7 +47,7 @@ document.getElementById("user-form").addEventListener("submit", async (event) =>
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({ text: 'Thank you for registration! Click here to get a thousand hryvias --> https://r.mtdv.me/neskambank',
+                body: JSON.stringify({ text: 'Дякуємо за реєстрацію! Натисніть тут, щоб отримати 1000 гривень --> https://r.mtdv.me/neskambank',
                 addressList: [{ email: newEntry.email, user: newEntry.user }] })
             });
 

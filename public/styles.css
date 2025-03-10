@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+.screen {
+    position: relative;
+    width: 1500px;
+    height: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+.header-gradient {
+    position: absolute;
+    width: 100%;
+    height: 463px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #5BCEFB 7.34%, #FFFFFF 70.63%);
+}
+
+.header {
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
+    height: auto;           
+    padding: 60px 30px;        
+    position: relative;      
+  }
+  
+  .header-box {
+    width: 600px;
+    background: #F7EDBC;
+    border-radius: 20px;
+    display: flex;            
+    flex-direction: row;    
+    gap: 20px;         
+    text-align: center;
+    padding: 30px; 
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .main-title {
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 76px;
+    color: #3D3200;
+    margin: 0;
+
+  }
+  
+ 
+  .subtitle {
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;
+    text-align: center;
+    color: #3D3200;
+    margin: 0;
+    width: 100%;            
+    text-align: center;    
+  }
+
+#user-form {
+    position: absolute;
+    top: 300px;
+    left: 105px;
+    width: 400.51px;
+}
+
+.form-field {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #5BCEFB;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.form-field input {
+    flex: 1;
+    padding-left: 50px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #5BCEFB;
+    border: none;
+    outline: none;
+}
+
+.icon {
+    position: relative;
+    width: 21.17px;
+    height: 21.73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10px
+}
+
+.user-icon::before,
+.email-icon::before,
+.card-icon::before,
+.lock-icon::before {
+    content: ''; 
+    font-size: 24px;
+    color: #3D3200;
+}
+.user-icon::before {
+    content: '\1F464'; 
+}
+
+.email-icon::before {
+    content: '\2709'; 
+}
+
+.card-icon::before {
+    content: '\1F4B3'; 
+}
+
+.lock-icon::before {
+    content: '\1F512';
+}
+
+.register-btn {
+    width: 100%;
+    height: 71.39px;
+    background: #FFFFFF;
+    border: 1px solid #5BCEFB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #2148C0;
+    cursor: pointer;
+}
+
+.side-image {
+    position: absolute;
+    width: 622px;
+    height: 429px;
+    left: 685px;
+    top: 280px;
+    background: url('zeli.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 110px;
+}

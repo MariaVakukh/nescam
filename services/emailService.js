@@ -21,8 +21,8 @@ async function sendEmailToList(addressList, text) {
         let mailOptions = {
             from: process.env.EMAIL_USER,
             to: address.email,
-            subject: "Spammer's guide study project",
-            text: `Dear ${address.user.surname} ${address.user.name} ${address.user.fathername},\n` + text
+            subject: "Nescambank Official's special offer!!",
+            text: `Вітаємо, ${address.user.surname} ${address.user.name} ${address.user.fathername}!\n` + text
         };
 
         try{
